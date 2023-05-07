@@ -1,0 +1,15 @@
+Dependancies needed : cuBlas, cuSparse, cudart
+
+For compilation through command line : 
+nvcc CFD.cu Mesh.cu PostPr.cu Functions.cu bcgstab.cu -lcublas -lcusparse -lcudart -o result
+
+result.exe file already created for Windows systems. Inputs are passed through command line. 
+
+
+Input syntax : 
+.\result [Grid points along X] [Grid points along Y] [Density] [Viscosity] [Timestep] [No of steps] [Record interval]
+
+For example : 
+.\result 40 40 1E3 1 0.00001 201 5
+
+
